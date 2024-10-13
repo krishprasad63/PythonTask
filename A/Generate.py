@@ -8,7 +8,9 @@ ext = ['.txt','.doc','.xls','.py','.c','.html','.ppt','.cpp','.css','.js']
 fixed_address = 'C:/Users/krish/PythonTask'
 folder_path = fixed_address +'/random' 
 
-for i in range(1000):
+# 'n' is number of file to be generated
+n = 1000
+for i in range(n):
     k = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6))
     a = secrets.choice(ext)
     file_name = k+a 

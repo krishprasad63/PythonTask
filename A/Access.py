@@ -27,4 +27,4 @@ for k in list_:
         os.makedirs(new_folder) 
  
 for j in range(len(a)):
-    os.rename('{}/random/{}'.format(fixed_address, a[j]),'{}/{}/{}'.format(fixed_address,f_ext(a[j]),a[j]))
+    os.rename(fixed_address+'/random/{}'.format(a[j]), fixed_address+'/{}/{}'.format(f_ext(a[j]),a[j]))
